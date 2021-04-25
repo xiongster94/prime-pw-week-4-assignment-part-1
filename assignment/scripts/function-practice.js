@@ -14,7 +14,7 @@ function hello() {
 console.log( hello() );
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
-function helloName( name ) {
+function helloName( name ){
   console.log( `Hello, ${name}!`);
   return;
 } // end helloName
@@ -24,7 +24,7 @@ function helloName( name ) {
 helloName( 'Jo' );
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber, secondNumber) {
+function addNumbers( firstNumber, secondNumber){
   console.log('in addNumbers');
   let answer = firstNumber + secondNumber;
   return answer;
@@ -44,7 +44,7 @@ console.log( 'running multiplyThree', multiplyThree(2,2,2) );
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
+function isPositive( number ){
   if ( number > 0 ){
     return true;
   } else {
@@ -65,7 +65,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
+function getLast( array ){
   lastValue = array.pop();
   return lastValue;
 } // end getLast
@@ -81,14 +81,14 @@ console.log( 'running getlast', getLast(numbers) );
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++){
     if (array[i] == value) {
       return true;
     } else {
       return false;
     }
   }
-}
+} // end find
 let alphabet = ['a', 'b', 'c']
 console.log('running find', find('a', alphabet) );
 
@@ -99,7 +99,7 @@ console.log('running find', find('d', alphabet) );
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+function isFirstLetter(letter, string){
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
